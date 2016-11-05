@@ -1,0 +1,31 @@
+PUBLISHING TO PODCAST
+
+1. Use tag 'podcast' on posts so they show up on the podcast page
+
+2. Formatting title
+
+    Use: "Ep 23: Title goes here"
+
+PUBLISHING TO RECENT LOOP
+
+1. Use 'blog' and 'podcast' tags on posts
+
+TOPICS
+
+Use the following tags:
+
+'training'
+'nutrition'
+'lifestyle'
+'mental'
+'coaches'
+
+MARKDOWN
+
+Intro quotes: <div class="quote">Quote text here</div>
+
+TODOS:
+
+1. call to action buttons
+2. testimonials page
+3. quote modal on home

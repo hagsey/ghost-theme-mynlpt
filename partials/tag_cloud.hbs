@@ -1,0 +1,22 @@
+        <div class="tag-cloud">
+          <h4>Topics</h4>
+            {{#get "tags" limit="all" include="count.posts" order="name asc"}}
+                <ul>
+                  {{#foreach tags}}
+                      <li>
+                        <div class="tag-name">
+                          <p class="arrow"></p>
+                          <p class="tag">{{name}} ({{count.posts}})</p>
+                        </div>
+                        <ul class="subtag-post-list">
+                        {{#get "posts" filter="tag:{{name}}"}}
+                          {{#foreach posts}}
+                          <li><a href="{{url}}">{{title}}</a></li>
+                          {{/foreach}}
+                        {{/get}}
+                        </ul>
+                      </li>
+                  {{/foreach}}
+                </ul>
+            {{/get}}
+        </div>

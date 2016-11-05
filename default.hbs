@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Cormorant+Garamond:500|Source+Sans+Pro:300,400|Rock+Salt" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+</head>
+
+<body>
+  <div class="site-wrapper">
+  {{> "nav_bar"}}
+
+
+  {{{body}}}
+  <div class="site-footer-wrapper">
+    <div class="site-footer container">
+      <div class="clearfix">
+        <div class="footer-social col-3">
+          <h3 class="footer-column-title">Follow</h3>
+          <a class="instagram" href="http://www.instagram.com/nlpt1" target="_blank">Instagram</a>
+          <a class="facebook" href="http://www.facebook.com/nlpt1" target="_blank">Facebook</a>
+          <a class="twitter" href="http://www.twitter.com/nlpt1" target="_blank">Twitter</a>
+          <a class="snapchat" href="#" target="_blank">Snapchat</a>
+          <div class="modal">
+            <img id="snapcode" src="/assets/images/snapcode.jpg">
+          </div>
+        </div>
+
+        <div class="col-3">
+          <h3 class="footer-column-title">Navigation</h3>
+          <ul class="footer-navigation">
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="/programs/">Programs</a></li>
+            <li><a class="nav-link" href="/massage/">Massage</a></li>
+            <li><a class="nav-link" href="/blog/">Blog</a></li>
+            <li><a class="nav-link" href="/history/">NLPT History</a></li>
+            <li><a class="nav-link" href="/staff/">Staff</a></li>
+            <li><a class="nav-link" href="/facilities/">Facilities</a></li>
+            <li><a class="nav-link" href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3 contact">
+          <h3 class="footer-column-title">Contact</h3>
+          <h4>Phone</h4>
+          <p>(519) 620-9898</p>
+
+          <h4>Email</h4>
+          <p>info@mynlpt.com</p>
+
+          <h4>Stratford Address</h4>
+          <div class="address">
+            <p>Stratford Rotary Complex</p>
+            <p>353 McCarthy Dr</p>
+            <p> Stratford, Otario N5A 7S7</p>
+          </div>
+
+          <h4>Cambridge Address</h4>
+          <div class="address">
+            <p>460 Thompson Dr, Unit 4</p>
+            <p>Cambridge, Ontario</p>
+            <p>N1T 2K8</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule">
+        <h3 class="footer-column-title">Schedule</h3>
+        <p>Please see the <a href="/programs/">programs page</a> for specific class schedule</p>
+        <h4>Cambridge Program Schedule</h4>
+        {{> "cambridge_schedule"}}
+
+        <h4>Stratford Program Schedule</h4>
+        {{> "stratford_schedule"}}
+      </div>
+
+
+    </div>
+    <div class="modal-layer"></div>
+  </div>
+
+  {{ghost_foot}}
+
+
+  {{!-- PRODUCTION JAVSCRIPT FILE --}}
+  <script type="text/javascript" src="{{asset 'js/testimonialData.js'}}"></script>
+  <script type="text/javascript" src="{{asset 'js/all.min.js'}}"></script>
+  <script type="text/javascript">
+
+    // BUG! For some reason Grunt won't uglify the code if the loopExecuter function is present in the index.js file. No problem if it's included below though.
+
+    var loopExecuter = function(arr, func, time, i=0) {
+      // Loops through an array and executes function at set interval
+      setTimeout(function() {
+        func(arr[i]);
+        i++
+
+        if (i > arr.length-1) {
+           loopExecuter(arr, func, time, i=0);
+        } else {
+           loopExecuter(arr, func, time, i);
+        }
+      }, time);
+    };
+
+
+  </script>
+
+  <script type="text/javascript">
+      // Toggle programs nav
+
+      // $('.programs-nav-bar').on('click', 'a', function() {
+      //   var target_id = $(this).find(data('id');
+
+      //   $('.program-content').removeClass('visible');
+      //   $('.programs-nav-bar .program').removeClass('button-active');
+
+      //   $(".program-content[data-id='" + target_id + "']").addClass('visible');
+      //   $(".programs-nav-bar .program[data-id='" + target_id + "']").addClass('button-active');
+      // });
+
+      $.fn.scrollView = function (speed, offsetY) {
+        return this.each(function () {
+          $('html, body').animate({
+            scrollTop: $(this).offset().top - offsetY
+          }, speed);
+        });
+      }
+
+      $(".sub-programs").off().on("click", ".sub-program-button", function() {
+        var id = $(this).data("id"),
+            el = $(".subsection[data-id='" + id + "']");
+
+        $(el).scrollView(400, 100);
+      });
+
+      $(".scroll-up-button").on("click", function() {
+        var el = $(this).closest('.content-text').find('.program-top');
+
+        $(el).scrollView(400, 100);
+      });
+
+      var page_id = $(".page").data("program");
+      $(".programs-nav-bar").find(".program-button[data-program='" + page_id + "']").addClass("button-active");
+  </script>
+  {{!-- Google analytics --}}
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27486229-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>

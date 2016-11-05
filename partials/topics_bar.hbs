@@ -1,0 +1,86 @@
+<div class="topics-wrapper clearfix">
+
+  <div class="topic-container topic-header">
+    <div class="topic">
+      <p>Topics</p>
+      <span class="round-arrow"></span>
+    </div>
+  </div>
+
+  <div class="all-topics-container">
+    <div class="topic-container col-5">
+      <div class="topic">
+        <p>Training</p>
+        <span class="round-arrow"></span>
+      </div>
+      <ul class="subtopic-post-list">
+        {{#get "posts" filter="tag:training"}}
+          {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        {{/get}}
+      </ul>
+    </div>
+
+    <div class="topic-container col-5">
+      <div class="topic clearfix">
+        <p>Nutrition</p>
+        <span class="round-arrow"></span>
+      </div>
+      <ul class="subtopic-post-list">
+        {{#get "posts" filter="tag:nutrition"}}
+          {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        {{/get}}
+      </ul>
+
+    </div>
+
+    <div class="topic-container col-5">
+      <div class="topic">
+        <p>Lifestyle</p>
+        <span class="round-arrow"></span>
+      </div>
+      <ul class="subtopic-post-list">
+        {{#get "posts" filter="tag:lifestyle"}}
+          {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        {{/get}}
+      </ul>
+
+    </div>
+
+    <div class="topic-container col-5">
+      <div class="topic">
+        <p>Mental performance</p>
+        <span class="round-arrow"></span>
+      </div>
+      <ul class="subtopic-post-list">
+        {{#get "posts" filter="tag:mental"}}
+          {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        {{/get}}
+      </ul>
+
+    </div>
+
+    <div class="topic-container col-5">
+      <div class="topic">
+        <p>Parents & coaches</p>
+        <span class="round-arrow"></span>
+      </div>
+      <ul class="subtopic-post-list">
+        {{#get "posts" filter="tag:coaches"}}
+          {{#foreach posts}}
+          <li><a href="{{url}}">{{title}}</a></li>
+          {{/foreach}}
+        {{/get}}
+      </ul>
+    </div>
+  </div>
+
+</div>
+

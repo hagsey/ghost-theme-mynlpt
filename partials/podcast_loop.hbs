@@ -1,0 +1,16 @@
+{{#get "posts" filter="tag:podcast"}}
+  {{#foreach posts}}
+      <a href="{{url}}" class="content-preview-area">
+        <img class="content-preview-image" src="{{image}}" />
+        <div class="preview-image-cover"></div>
+        <div class="content-preview-text">
+          <h2 class="post-title">{{title}}</h2>
+          <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
+        </div>
+        <div class="podcast-description">
+          <p>{{meta_description}}</p>
+          <p class="listen-now-button">Listen now</p>
+        </div>
+      </a>
+  {{/foreach}}
+{{/get}}

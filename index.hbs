@@ -1,0 +1,45 @@
+{{!< default}}
+
+<div class="page main-page">
+  <div class="page-header main-page-header">
+    {{> "hero_header"}}
+  </div>
+
+  <div class="page-content">
+    {{> "portals"}}
+    {{> "email_subscribe_bar"}}
+
+    <div class="section about-section container">
+      <h2 class="section-title">Welcome to NLPT</h2>
+      <img class="about-section-logo" src="/assets/images/logo.png">
+      <p>Next Level Performance Training is Waterloo Region’s best and most established private training centre for athletes and adults. Since 2008, NLPT has worked with athletes and clients of all ages, backgrounds, sports, and health histories.</p>
+
+      <p>We’ve taught 9-year-olds as well as 90-year-olds to squat and deadlift, coached 12-year-old hockey players all the way up to their NHL draft day, as well as worked with athletes from a variety of sports competing on the national stage.</p>
+
+      <p>Although our client roster is diverse, our goal for all of them remains the same:</p>
+
+      <p>To inspire and empower people, teams, and organizations with the tools and confidence necessary to pursue their next level of performance, health, and wellness.</p>
+      <p class="signature">NLPT</p>
+    </div>
+
+    <div class="section container">
+    {{> "testimonial_ticker"}}
+    </div>
+
+    <div class="preview-section-wrapper">
+      <div class="section preview-section container clearfix">
+        <div class="col-2">
+          <h2 class="section-title">Recent Blog Posts</h2>
+          {{> "recent_blog_loop"}}
+        </div>
+
+        <div class="col-2">
+          <h2 class="section-title">Upcoming Events</h2>
+          {{> "upcoming_event_loop"}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

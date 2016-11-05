@@ -1,0 +1,9 @@
+{{#get "posts" limit="4" filter="tag:event"}}
+  {{#foreach posts}}
+        <div class="content-preview-text">
+          <a href="{{url}}"><h3 class="blog-title">{{title}}</h3></a>
+          <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
+        </div>
+  {{/foreach}}
+{{/get}}
+

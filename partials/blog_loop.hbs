@@ -1,0 +1,14 @@
+{{#get "posts"}}
+  {{#foreach posts}}
+  <div class="post-preview-area">
+    <div class="content-preview-area clearfix">
+        <a class="post-title" href="{{url}}">{{title}}</a>
+        <time class="blog-post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time>
+        {{#if image}}
+          <img class="content-preview-image" src="{{image}}">
+        {{/if}}
+        <p>{{excerpt words="45"}} <a class="read-more" href="{{url}}">Read more &raquo;</a></p>
+    </div>
+  </div>
+  {{/foreach}}
+{{/get}}

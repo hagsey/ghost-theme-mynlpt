@@ -1,0 +1,20 @@
+{
+  "name": "Athlete in Training",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Eric Hagemann <hagemann.eric@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/hagsey/athlete-in-training",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

@@ -1,0 +1,56 @@
+{{!< default}}
+
+{{#post}}
+
+<div class="page post-page">
+
+
+    <div class="post-content-container container">
+      <h1 class="post-title">{{title}}</h1>
+      <div class="post-meta clearfix">
+        <div class="author date">
+          <p>Posted on {{date format="MMMM D, YYYY"}}</p>
+        </div>
+
+      </div>
+      {{> "share"}}
+      <div class="post-content">
+        {{#if image}}
+          <img src="{{image}}" />
+        {{/if}}
+        {{content}}
+      </div>
+      {{> "share"}}
+    </div>
+  </div>
+
+{{!--     {{#author}}
+      <div class="author-content-wrapper">
+        <div class="author-content">
+          <div class="author-image">
+          {{#if image}}
+            <a href="{{url}}" style="background-image: url({{image}})"></a>
+          {{else}}
+            <a href="{{url}}" style="background-image: url({{image}})"></a>
+          {{/if}}
+          </div>
+
+          <div class="author-info">
+            <h4><a href="{{url}}">{{name}}</a></h4>
+
+            {{#if bio}}
+              <p>{{bio}}</p>
+            {{else}}
+              <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+            {{/if}}
+            <div class="author-meta">
+              {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+              {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/author}} --}}
+    {{> "email_subscribe_bar"}}
+
+{{/post}}
