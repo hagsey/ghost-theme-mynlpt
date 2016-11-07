@@ -132,33 +132,33 @@ img {
   font-family: 'Rock Salt', Helvetica, sans-serif;
 }
 .button {
-    text-align: center;
-    margin: 0 40px;
-    padding: 5px 10px;
-    cursor: pointer;
-    background: $theme-color-highlight;
-    color: $theme-color-dark-gray;
-    border: 3px solid transparent;
-    border-radius: 4px;
-    font-weight: 400;
-    transition: all 0.2s ease;
+  text-align: center;
+  margin: 0 40px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: $theme-color-highlight;
+  color: $theme-color-dark-gray;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: all 0.2s ease;
 }
 .email-button {
-    background: $button-email;
-    color: white;
-    border: none;
-    margin: 0;
+  background: $button-email;
+  color: white;
+  border: none;
+  margin: 0;
 }
 .sign-up-button {
 
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 0;
-    z-index: 3;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 0;
+  z-index: 3;
 }
 .sign-up-button:hover {
   background: #27a95e;
@@ -331,13 +331,13 @@ SUBSCRIBE
   font-size: 18px;
 }
 #mc-embedded-subscribe {
-    border: 1px solid $theme-color-dark;
-    cursor: pointer;
-    left: -5px;
-    position: relative;
-    box-sizing: border-box;
-    background: $theme-color-dark;
-    color: $theme-color-light;
+  border: 1px solid $theme-color-dark;
+  cursor: pointer;
+  left: -5px;
+  position: relative;
+  box-sizing: border-box;
+  background: $theme-color-dark;
+  color: $theme-color-light;
 }
 input#mce-EMAIL {
   border-style: none;
@@ -451,10 +451,10 @@ HERO AND PAGE SETTINGS
 }
 
 .hero-sub-title {
-    font-family: $heading-font-family;
-    font-size: 2em;
-    letter-spacing: 2px;
-    color: #bdbdbd;
+  font-family: $heading-font-family;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #bdbdbd;
 }
 .page-content {
   position: relative;
@@ -541,76 +541,76 @@ ABOUT PAGE
 STAFF PAGE
 =================
 */
-  .staff-box {
-    display: inline-block;
-    width: 230px;
-    height: 330px;
-    vertical-align: top;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 15px;
-    background: #f6f6f6;
-    border-radius: 3px;
-    margin: 15px;
-    cursor: pointer;
-    h5 {
-      margin: 7px 0;
-    }
-    h5:last-of-type {
-      margin-bottom: 20px;
-    }
+.staff-box {
+  display: inline-block;
+  width: 230px;
+  height: 330px;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #f6f6f6;
+  border-radius: 3px;
+  margin: 15px;
+  cursor: pointer;
+  h5 {
+    margin: 7px 0;
   }
-  .staff-box:hover {
-    background: #e6e6e6;
+  h5:last-of-type {
+    margin-bottom: 20px;
   }
-  .modal {
-    display: none;
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    height: 80%;
-    transform: translateX(-50%);
-    background: #fff;
-    box-sizing: border-box;
-    padding: 20px 40px;
-    z-index: 3;
-    overflow-y: scroll;
-    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    h2 {
-      margin: 0.4em 0;
-      font-weight: bold;
-    }
-    h3 {
-      margin-bottom: 0.4em;
-    }
+}
+.staff-box:hover {
+  background: #e6e6e6;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  height: 80%;
+  transform: translateX(-50%);
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  z-index: 3;
+  overflow-y: scroll;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  h2 {
+    margin: 0.4em 0;
+    font-weight: bold;
+  }
+  h3 {
+    margin-bottom: 0.4em;
+  }
 
-    li {
-      display: list-item;
-      margin-left: 30px;
-      list-style: circle;
-    }
+  li {
+    display: list-item;
+    margin-left: 30px;
+    list-style: circle;
   }
-  .modal.contact-modal {
-    height: auto;
-  }
-  .modal-layer {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(39, 39, 39, 0.6);
-    z-index: 2;
-  }
-  .close-button {
-    height: 25px;
-    width: 25px;
-    float: right;
-    background: url(../images/close-button.png);
-    background-size: cover;
-    cursor: pointer;
-  }
+}
+.modal.contact-modal {
+  height: auto;
+}
+.modal-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(39, 39, 39, 0.6);
+  z-index: 2;
+}
+.close-button {
+  height: 25px;
+  width: 25px;
+  float: right;
+  background: url(../images/close-button.png);
+  background-size: cover;
+  cursor: pointer;
+}
 /*
 ================
 PROGRAMS PAGE
@@ -620,6 +620,14 @@ PROGRAMS PAGE
 .content-text {
   width: 70%;
   float: right;
+  h3 {
+    font-size: 1.75em;
+    margin-bottom: 0.7em;
+  }
+  h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
 }
 
 .programs-nav-bar {
@@ -645,7 +653,15 @@ PROGRAMS PAGE
 .program-content {
   position: relative;
   h4 {
-    font-size: 1.3em;
+    font-size: 1.5em;
+  }
+  ul {
+    list-style: disc;
+    text-indent: 1em;
+    list-style-position: inside;
+    li {
+      display: list-item;
+    }
   }
 }
 .visible {
@@ -676,16 +692,16 @@ PROGRAMS PAGE
   }
 }
 .scroll-up-button {
-    width: 175px;
-    margin: 30px;
-    color: white;
-    background: $button-email;
-    border: none;
+  width: 175px;
+  margin: 30px;
+  color: white;
+  background: $button-email;
+  border: none;
 
-    h4 {
-      font-weight: 500;
-      margin: 0;
-    }
+  h4 {
+    font-weight: 500;
+    margin: 0;
+  }
 }
 .pricing-table {
   * {
@@ -1040,8 +1056,8 @@ POST
   }
 
   a {
-  color: $twitter;
-  cursor: pointer;
+    color: $twitter;
+    cursor: pointer;
   }
   a:hover {
     text-decoration: underline;
@@ -1063,19 +1079,19 @@ POST
   box-sizing: border-box;
   color: #444;
 }
-  .quote:before,
-  .quote:after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 38px;
-    background: #444;
-    vertical-align: middle;
-    margin: 0 50px 0 0;
-    }
-    .quote:after {
-      margin: 0 0 0 50px;
-    }
+.quote:before,
+.quote:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 38px;
+  background: #444;
+  vertical-align: middle;
+  margin: 0 50px 0 0;
+}
+.quote:after {
+  margin: 0 0 0 50px;
+}
 
 .first-letter{
   float       : left;
@@ -1190,9 +1206,9 @@ MASSAGE PAGE
     margin-right: 10px;
   }
   li {
-  display: list-item;
-  margin-left: 30px;
-  list-style: circle;
+    display: list-item;
+    margin-left: 30px;
+    list-style: circle;
   }
   .pricing-table {
     height: auto;
@@ -1526,8 +1542,8 @@ BREAKPOINTS
     font-size: 1.4em;
   }
   .hp-video {
-  width: 560px;
-  height: 315px;
+    width: 560px;
+    height: 315px;
   }
 }
 
@@ -1537,7 +1553,7 @@ BREAKPOINTS
     width: 400px;
     height: 250px;
   }
-    .program-button h2 {
+  .program-button h2 {
     font-size: 1.3em;
   }
   .site-title {

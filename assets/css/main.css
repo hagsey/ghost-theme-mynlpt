@@ -2926,6 +2926,12 @@ PROGRAMS PAGE
 .content-text {
   width: 70%;
   float: right; }
+  .content-text h3 {
+    font-size: 1.75em;
+    margin-bottom: 0.7em; }
+  .content-text h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em; }
 
 .programs-nav-bar {
   margin: 30px 0; }
@@ -2950,7 +2956,13 @@ PROGRAMS PAGE
 .program-content {
   position: relative; }
   .program-content h4 {
-    font-size: 1.3em; }
+    font-size: 1.5em; }
+  .program-content ul {
+    list-style: disc;
+    text-indent: 1em;
+    list-style-position: inside; }
+    .program-content ul li {
+      display: list-item; }
 
 .visible {
   display: block; }
