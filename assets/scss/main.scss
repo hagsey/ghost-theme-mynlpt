@@ -200,7 +200,9 @@ img {
     margin-right: 20px;
   }
 }
-
+#formwrapper {
+  margin: 0 !important;
+}
 /*
 =================
 NAV BAR
@@ -616,10 +618,7 @@ STAFF PAGE
 PROGRAMS PAGE
 ================
 */
-
-.content-text {
-  width: 70%;
-  float: right;
+.page-content {
   h3 {
     font-size: 1.75em;
     margin-bottom: 0.7em;
@@ -628,6 +627,18 @@ PROGRAMS PAGE
     font-size: 1.5em;
     margin-bottom: 0.5em;
   }
+  ul {
+    list-style: disc;
+    text-indent: 1em;
+    list-style-position: inside;
+    li {
+      display: list-item;
+    }
+  }
+}
+.content-text {
+  width: 70%;
+  float: right;
 }
 
 .programs-nav-bar {
@@ -652,17 +663,7 @@ PROGRAMS PAGE
 }
 .program-content {
   position: relative;
-  h4 {
-    font-size: 1.5em;
-  }
-  ul {
-    list-style: disc;
-    text-indent: 1em;
-    list-style-position: inside;
-    li {
-      display: list-item;
-    }
-  }
+
 }
 .visible {
   display: block;
@@ -686,6 +687,8 @@ PROGRAMS PAGE
     transition: none;
     -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+    list-style: none;
+    text-indent: none;
   }
   .sub-program-button:hover {
     background: #2b2b2b;
@@ -833,6 +836,17 @@ FACILITIES PAGE
   width: 125px;
 }
 
+/*
+=================
+CLIENTS SECTION
+=================
+*/
+.fine-print {
+
+}
+.partner-image {
+  width: 250px;
+}
 /*
 =================
 HISTORY PAGE
