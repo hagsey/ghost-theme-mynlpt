@@ -2466,6 +2466,10 @@ li {
 img {
   margin-bottom: 20px; }
 
+figcaption {
+  font-size: 0.8em;
+  color: #444; }
+
 .active {
   background-color: #ffd10c; }
 
@@ -2938,6 +2942,8 @@ PROGRAMS PAGE
   list-style-position: inside; }
   .page-content ul li {
     display: list-item; }
+.page-content a {
+  color: #00aced; }
 
 .content-text {
   width: 70%;
@@ -3053,6 +3059,17 @@ FIT PAGE
 */
 .fit-page {
   background-image: url("../images/banners/fit-banner.jpg"); }
+
+.program-link-box {
+  width: 300px;
+  height: 150px;
+  display: block;
+  padding: 0.5em;
+  box-sizing: border-box;
+  background: linear-gradient(white, white);
+  box-shadow: 1px 1px 3px 1px #d8d8d8;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px; }
 
 /*
 =================
